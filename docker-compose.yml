@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  autoreplier:
+    image: autoreplier
+    env_file:
+      - .env
+    # environment:
+    #   - API_ID=${API_ID}
+    #   - API_HASH=${API_HASH}
+    #   - PHONE=${PHONE}
+    #   - SESSION_FILE=${SESSION_FILE}
+    #   - PASSWORD=${PASSWORD}
+    #   - TPPROXY=${TPPROXY}
+    #   - PPROT=${PPROT}
+    #   - PKEY=${PKEY}
+    build:
+      context: .
+      dockerfile: Dockerfile
